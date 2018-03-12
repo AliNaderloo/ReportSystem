@@ -31,9 +31,9 @@
    <!-- DataTables -->
    <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap.css">
    <link rel="stylesheet" href="{{ asset('css/remodal.css') }}" />
-     <link rel="stylesheet" href="{{ asset('css/remodal-default-theme.css') }}" />
+   <link rel="stylesheet" href="{{ asset('css/remodal-default-theme.css') }}" />
    <link rel="stylesheet" href="{{ asset('css/JqueryMobile.css') }}" />
-
+   <link rel="stylesheet" href="{{ asset('css/persianDatepicker-default.css') }}" />
    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -44,9 +44,10 @@
 <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }} "/>
 <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
 <link rel="stylesheet" href="{{ asset('css/Style.css') }}">
-
+<link rel="stylesheet" href="{{ asset('css/easy-autocomplete.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/easy-autocomplete.themes.min.css') }}">
 </head>
-<body class="hold-transition skin-blue sidebar-mini  sidebar-collapse">
+<body class="hold-transition skin-green-light sidebar-mini  sidebar-collapse">
 
   <div class="wrapper">
 
@@ -335,7 +336,9 @@
       </div>
       <div class="pull-right info">
         <p>{{session('name')}}</p>
+        <!--
         <a href="#"><i class="fa fa-circle text-success"></i> آنلاین</a>
+        -->
       </div>
     </div>
     <!-- search form -->
@@ -599,8 +602,13 @@
 <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
 <script src="{{ asset('js/remodal.min.js') }}" ></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="{{ asset('js/moment.min.js') }}" ></script>
 <script src="{{ asset('js/toastr.min.js') }}" ></script>
+<script src="{{ asset('js/Chart.min.js') }}" ></script>
 <script src="{{ asset('js/jquery.form.min.js') }}" ></script>
+<script src="{{ asset('js/persianDatepicker.min.js') }}" ></script>
+<script src="{{ asset('js/jquery.easy-autocomplete.min.js') }}" ></script>
+
 @yield('extensions')
 <script type="text/javascript">
 
@@ -644,7 +652,7 @@
         }
       });
     });
-   
+
     $('p').trunk8({
       fill: '&hellip; <a id="read-more" href="#">بیشتر</a>'
     });
