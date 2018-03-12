@@ -54,7 +54,7 @@
     <header class="main-header">
 
       <!-- Logo -->
-      <a href="index2.html" class="logo">
+      <a class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>C</b>HP</span>
         <!-- logo for regular state and mobile devices -->
@@ -367,7 +367,7 @@
 <!-- /.content-wrapper -->
 <footer class="main-footer">
 
-  <strong>. کلیه حقوق این سایت متعلق به <a href="http://almsaeedstudio.com">شرکت کالا رسانان چاپار</a></strong>  &copy; میباشد 
+  <strong>. کلیه حقوق این سایت متعلق به <a href="http://almsaeedstudio.com" style="color: #00a65a;">شرکت کالا رسانان چاپار</a></strong>  &copy; میباشد 
 </footer>
 
 <!-- Control Sidebar -->
